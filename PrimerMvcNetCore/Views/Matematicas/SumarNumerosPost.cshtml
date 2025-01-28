@@ -1,0 +1,14 @@
+﻿<h1>Sumar Numeros POST</h1>
+
+<form method="post">
+    <label>Numero1</label>
+    <input type="text" name="numero1" 
+        class="form-control" value="@ViewData["NUMERO1"]"/> <br />
+    <label>Numero2</label>
+    <input type="text" name="numero2"
+           class="form-control" value="@ViewData["NUMERO2"]" /> <br />
+    <button class="btn btn-info">
+        Enviar Información
+    </button>
+</form>
+<h1 style="color:green">@ViewData["DATA"]</h1>

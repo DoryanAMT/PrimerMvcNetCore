@@ -2,6 +2,23 @@
 <ul>
     <li>
         <a asp-controller="Informacion"
+           asp-action="VistaControllerPost">
+           Vista Controller POST
+       </a>
+    </li>
+    <li>
+        @Html.ActionLink("Vista Controller Get", "VistaControllerGet",
+        "Informacion",
+        new { saludo = "Hola caracola", year = 2025 })
+    </li>
+    @* Enviar parametros vacios *@
+    <li>
+        @Html.ActionLink("Vista Controller Vacío", "VistaControllerGet",
+        "Informacion",
+        new { saludo = "Estoy saludando!!!!"})
+    </li>
+    <li>
+        <a asp-controller="Informacion"
            asp-action="ControladorVista">
         Controlador --> Vista
         </a>
@@ -13,4 +30,5 @@
             Controlador --> Vista Model
         </a>
     </li>
+
 </ul>

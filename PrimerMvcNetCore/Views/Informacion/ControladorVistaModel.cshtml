@@ -5,6 +5,10 @@
     Información Controller --> View Model
 </h1>
 
-<h2 style="color:blue">
-    @Model.Nombre, @Model.Email, @Model.Edad
-</h2>
+@if(Model != null){
+    <h2 style="color:blue">
+        @Model.Nombre, @Model.Email, @Model.Edad
+    </h2>
+}else{
+    <h1 style="color:red">No tenemos model</h1>
+}
